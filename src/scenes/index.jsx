@@ -1,11 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Home from "../components/Home"
+import Hero from "../components/Hero"
+import { SectionHero } from "../components/Hero/styles"
 
 export default () => {
   return (
     <Layout>
-      <Home />
+      <SectionHero>
+        <Hero />
+      </SectionHero>
     </Layout>
   )
 }

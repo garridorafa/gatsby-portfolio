@@ -1,5 +1,5 @@
 import React from "react"
-import { Grid, Icon } from "semantic-ui-react"
+import { Grid } from "semantic-ui-react"
 
 import { ProfileAvatar, SocialIcon } from "./styles"
 import ProfileImage from "../../assets/images/profile-avatar.jpg"
