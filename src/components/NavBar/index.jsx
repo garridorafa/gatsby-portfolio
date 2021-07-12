@@ -2,13 +2,23 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import { Button, List, Menu, Sidebar } from "semantic-ui-react"
 
+import styled from "styled-components"
+
+const NavButton = styled(List.Icon)`
+  i {
+    margin-top: 15px;
+    color: red;
+    background: red;
+  }
+`
+
 export default () => {
   const [visible, setVisible] = useState(false)
 
   return (
     <>
       <Button className="MenuMobile" onClick={() => setVisible(!visible)}>
-        <List.Icon name="bars" size="big" />
+        <NavButton name="bars" size="big" />
       </Button>
       <Sidebar
         animation="overlay"
